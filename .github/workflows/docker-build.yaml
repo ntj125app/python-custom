@@ -106,7 +106,7 @@ jobs:
           labels: ${{ steps.meta-packages.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      - name: Build & Push
+      - name: Build & Push OCI
         id: build-and-push-packages-oci
         uses: docker/build-push-action@v6
         with:
